@@ -1,7 +1,13 @@
-# SiteSense
+# SiteSense 3D
 **Team: SpaceBots · Company: Valmet**  
 **Challenge: Industrial Metaverse: Semantic 3D Scene Understanding & Autonomous Field-Service Copilot**  
 Since AI Hackathon 2026
+
+## Demo
+
+![SiteSence 3D demo](docs/media/demo_recording.gif)
+
+*A first-person trip to a selected asset, a random point, and a target object; with the route, RGB/depth feed, and service information on one screen.*
 
 ## What we built
 
@@ -19,16 +25,6 @@ The view stays level while walking, then turns toward the selected object on arr
 
 **[Download the object assets on Google Drive][object-assets]** — point clouds, Gaussian subsets, and region metadata. The bundle manifest gives the exact exported count.
 
-## Demo
-
-![Demo recording placeholder](docs/media/demo-placeholder.svg)
-
-<!-- Replace the line above with:
-![SiteSense first-person navigation demo](docs/media/sitesense-walkthrough.gif)
-Keep the GIF short; link the full-resolution video separately.
--->
-
-*A first-person trip to a selected asset, with the route, RGB/depth feed, and service information on one screen. Recording to be added.*
 
 ## How it works
 
