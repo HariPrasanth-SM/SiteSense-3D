@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SITESENSE 3D</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="app-header"><div class="brand"><div class="brandmark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3 28 10v13l-12 7L4 23V10zM4 10l12 7 12-7M16 17v13M10 6.5l12 7v7"/></svg></div><div><h1 id="projectTitle">SITESENSE 3D</h1><small>by SpaceBots <span>· Valmet · Industrial Metaverse</span></small></div></div><div class="badges"><span id="cameraBadge" class="badge">Camera starting</span><span id="searchBadge" class="badge">Search loading</span><span id="provenanceBadge" class="badge copper">Synthetic service records</span></div><button id="exportBrief" class="quiet">Export visit brief</button></header>
+<div id="warning" class="warning">Demo navigation includes gray cells; full 3D clearance is unverified.</div>
+<main class="layout">
+<section class="panel map-panel"><div class="panel-head"><div class="map-title"><span class="eyebrow">SPATIAL MISSION</span><h2>Boiler room <span id="mapState" class="subtle">Ready</span></h2></div><div class="maptools"><select id="mapTool" aria-label="Map action"><option value="select">Select asset / candidate</option><option value="start">Set avatar start</option><option value="target">Set manual target</option><option value="bind">Place selected asset pin</option></select><button id="reset">Reset</button></div></div>
+<div class="map-wrap"><canvas id="map" tabindex="0" aria-label="Interactive floor map"></canvas><div class="map-legend"><span><i class="legend free"></i>Free</span><span><i class="legend unknown"></i>Gray / demo-passable</span><span><i class="legend blocked"></i>Blocked</span><span><i class="legend avatar"></i>Avatar</span><span><i class="legend target"></i>Target</span></div></div>
+<div class="map-bottom"><span id="mapHint">Select a marker · drag to pan · scroll to zoom</span><b id="poseText"></b></div>
+<div class="map-status"><span id="notice">Connecting…</span></div>
+</section>
+<section class="camera-stack" aria-label="Camera and target views">
+<article class="panel camera-card media-rail-card">
+ <div class="view-rail"><h3 class="rail-label">RGB</h3></div>
+ <div class="image-wrap media-surface"><img id="rgb" alt="Awaiting simulated RGB"><span class="image-placeholder">Simulated first-person view</span>
+  <div class="media-actions"><button id="snapshot" class="tiny-button" title="Save raw RGB, depth and camera metadata">Save frame</button></div>
+  <div class="camera-meta floating-meta"><span id="rgbMeta">No rendered frame yet</span><span id="arrivalBadge"></span></div>
+ </div>
+</article>
+<article class="panel camera-card media-rail-card">
+ <div class="view-rail"><h3 class="rail-label" title="Expected camera-axis depth · provisional scale · near bright, far dark">Depth</h3></div>
+ <div class="image-wrap media-surface"><img id="depth" alt="Awaiting synthetic depth"><span class="image-placeholder">Expected depth · near bright · 0–8 m</span></div>
+</article>
+<article class="panel camera-card target-card media-rail-card">
+ <div class="view-rail"><h3 class="rail-label">Target</h3><span id="targetTitle" class="sr-only">Target object</span></div>
+ <div class="image-wrap media-surface target-image"><img id="objectImage" alt="Select a labelled object"><span class="image-placeholder">Select a labelled object or an image match</span>
+  <div class="media-actions target-tools"><select id="targetMode" aria-label="Target view"><option value="mask">Mask crop</option><option value="crop">Original crop</option><option value="arrival">Arrival match</option></select><button id="highlight" class="tiny-button" title="Optional final-view correspondence check">Verify</button></div>
+  <div class="camera-meta floating-meta"><span id="targetMeta">Focused object reference</span></div>
+ </div>
+</article>
+</section>
+<aside class="panel sidebar">
+<div class="mission-bar"><div class="action-buttons"><button id="plan" class="plan-button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16V6a2 2 0 0 1 2-2h8M10 1l4 3-4 3M2 16h4"/></svg>Plan route</button><button id="walk" class="primary"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 3 10 7-10 7z"/></svg>Start</button><button id="pause" class="pause-button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3v14M14 3v14"/></svg>Pause</button></div><div class="mission-info"><strong id="selectionTitle">Choose a service mission</strong><span id="planInfo">Plan a route to the target’s approach point.</span></div><div class="mission-utility"><button id="faceTarget" class="text-button">Face target</button><button id="targetPreview" class="text-button">Preview arrival</button><span id="motionState" class="badge">Idle</span></div></div>
+<div class="mode-tabs"><button data-mode="assets" class="active">01 <span>Service</span></button><button data-mode="image">02 <span>Image search</span></button><button data-mode="manual">03 <span>Manual</span></button></div>
+<div class="mode-content">
+<section id="assetsMode"><div class="section-title"><h2>Service missions</h2><span id="assetCount" class="tiny"></span></div><select id="assetSelect" aria-label="Select service asset"><option value="">Select an asset…</option></select><div id="assetGroups" class="asset-groups"></div><div class="group-title"><b id="groupName">Choose an equipment type</b><button id="clearGroup" class="text-button hidden">Change type</button></div><div id="assetList" class="asset-list"></div><div id="assetDetail" class="detail"><p class="muted">Choose an equipment type, then an asset. Relevant markers enlarge on the map.</p></div></section>
+<section id="imageMode" class="hidden"><div class="section-title"><h2>Find by appearance</h2></div><p class="muted intro">Upload a component. Drag a crop to remove background.</p><label class="upload">Choose component image<input id="queryFile" type="file" accept="image/png,image/jpeg,image/webp"></label><canvas id="queryCanvas" width="480" height="160" aria-label="Uploaded query crop"></canvas><div class="row"><button id="clearCrop">Whole image</button><button id="search" class="primary">Search image</button><label class="threshold">Min <input id="threshold" type="number" value="0.70" min="0.4" max="0.98" step="0.05" aria-label="Minimum cosine"></label></div><p id="queryStatus" class="notice-box">Similarity suggests candidates; it does not verify identity.</p><div id="results"></div><div class="row pager"><button id="previous">Previous five</button><button id="next">None · next five</button></div></section>
+<section id="manualMode" class="hidden"><div class="section-title"><h2>Explore the scene</h2></div><p class="muted intro">Hold a control or use arrow keys. Left/right rotate; W/S tilt your view.</p><div class="joystick"><div></div><button data-hold="forward">Forward ↑</button><div></div><button data-hold="left">Turn ←</button><button id="manualStop" class="pause-button">STOP</button><button data-hold="right">Turn →</button><div></div><button data-hold="backward">Backward ↓</button><div></div></div><div class="row look-controls"><button data-hold="look_up">Look up · W</button><button id="level">Level · H</button><button data-hold="look_down">Look down · S</button></div><label class="check"><input id="collision" type="checkbox" checked> Respect map obstacles</label><p class="notice-box">Map checks allow green and gray cells in demo mode. Disable only for free-roam inspection through walls.</p><button id="manualReset">Return to valid start</button></section>
+</div><div class="nearby-summary"><button id="nearbyToggle" class="text-button">Nearby assets <span id="nearbyCount">0</span> · inspect</button><span class="tiny">Within 2 m</span></div>
+</aside>
+</main>
+<footer class="common-controls"><div class="footer-title"><span class="eyebrow">AVATAR & CAMERA</span><span class="tiny">Shared across all modes</span></div><label>Speed <input id="speed" type="number" min="0.05" max="1" step="0.05" value="0.25"><small>m/s</small></label><label>Eye height <input id="eyeHeight" type="number" min="0.3" max="2.7" step="0.1" value="1.7"><small>m</small></label><label>Pitch <input id="pitch" type="number" min="-80" max="80" step="5" value="0"><small>°</small></label><label>Turn <input id="turnRate" type="number" min="10" max="150" step="10" value="60"><small>°/s</small></label><button id="apply" class="primary">Apply</button><div class="footer-presets"><button id="upPreset">Ceiling +35°</button><button id="downPreset">Floor −35°</button></div></footer>
+<dialog id="detailDialog"><div class="dialog-head"><h2 id="dialogTitle">Details</h2><button id="closeDialog" aria-label="Close details">Close ×</button></div><div id="dialogBody"></div></dialog>
+<div id="toast" role="status"></div><script src="/app.js"></script>
+</body></html>

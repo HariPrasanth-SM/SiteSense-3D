@@ -1,0 +1,9 @@
+# CPU dependencies shared by the current local demo.
+# Install CUDA-enabled PyTorch/torchvision separately for your platform.
+# Install gsplat==1.5.3 separately for live Gaussian rendering; see docs/SETUP.md.
+# Use the existing environment unchanged on the demo laptop.
+numpy
+scipy
+Pillow
+PyYAML
+plyfile

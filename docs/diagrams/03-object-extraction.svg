@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-labelledby="title desc">
+<title id="title">From image masks to 3D object regions</title><desc id="desc">Work in progress: larger regions are easier to recover than small industrial components.</desc>
+<rect width="1600" height="420" rx="20" fill="#EEEAF1"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#4E43A4"/></marker></defs>
+<text x="38" y="41" font-family="sans-serif" font-weight="700" font-size="17" fill="#4E43A4">SITESENSE / SPACEBOTS</text>
+<text x="38" y="83" font-family="sans-serif" font-weight="700" font-size="32" fill="#29263E">From image masks to 3D object regions</text>
+<text x="38" y="111" font-family="sans-serif" font-size="17" fill="#615C70">Work in progress: larger regions are easier to recover than small industrial components.</text>
+<rect x="38.0" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="38.0" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="56.0" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">01</text>
+<text x="56.0" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Calibrated views</text>
+<text x="56.0" y="259" font-family="sans-serif" font-size="17" fill="#615C70">RGB, depth and poses</text>
+<text x="56.0" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Known camera intrinsics</text>
+<path d="M323.2 233 H341.2" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="349.2" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="349.2" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="367.2" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">02</text>
+<text x="367.2" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">FastSAM masks</text>
+<text x="367.2" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Keep independent regions</text>
+<text x="367.2" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Retain quality decisions</text>
+<path d="M634.4 233 H652.4" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="660.4" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="660.4" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="678.4" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">03</text>
+<text x="678.4" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">DINOv3 + geometry</text>
+<text x="678.4" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Visual candidate matching</text>
+<text x="678.4" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Cross-view consistency</text>
+<path d="M945.6 233 H963.6" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="971.6" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="971.6" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="989.6" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">04</text>
+<text x="989.6" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">3D region groups</text>
+<text x="989.6" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Fuse observed surfaces</text>
+<text x="989.6" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Overlaps are permitted</text>
+<path d="M1256.8 233 H1274.8" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="1282.8" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="1282.8" y="132" width="279.2" height="8" rx="4" fill="#C36B49"/>
+<text x="1300.8" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">05</text>
+<text x="1300.8" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Separate exports</text>
+<text x="1300.8" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Cleaned point clouds</text>
+<text x="1300.8" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Original Gaussian subsets</text>
+<text x="38" y="381" font-family="sans-serif" font-size="18" fill="#615C70">Around 115 larger region hypotheses in the development collection. Hidden surfaces and small parts may remain incomplete.</text>
+</svg>

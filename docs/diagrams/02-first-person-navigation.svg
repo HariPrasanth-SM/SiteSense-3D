@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-labelledby="title desc">
+<title id="title">Find it. Plan a route. Walk there.</title><desc id="desc">Three target inputs share one navigation loop; manual exploration drives the avatar directly.</desc>
+<rect width="1600" height="420" rx="20" fill="#EEEAF1"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#4E43A4"/></marker></defs>
+<text x="38" y="41" font-family="sans-serif" font-weight="700" font-size="17" fill="#4E43A4">SITESENSE / SPACEBOTS</text>
+<text x="38" y="83" font-family="sans-serif" font-weight="700" font-size="32" fill="#29263E">Find it. Plan a route. Walk there.</text>
+<text x="38" y="111" font-family="sans-serif" font-size="17" fill="#615C70">Three target inputs share one navigation loop; manual exploration drives the avatar directly.</text>
+<rect x="38.0" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="38.0" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="56.0" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">01</text>
+<text x="56.0" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Select a target</text>
+<text x="56.0" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Map point / known asset</text>
+<text x="56.0" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Or image-query match</text>
+<path d="M323.2 233 H341.2" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="349.2" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="349.2" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="367.2" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">02</text>
+<text x="367.2" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Confirm location</text>
+<text x="367.2" y="259" font-family="sans-serif" font-size="17" fill="#615C70">User reviews the match</text>
+<text x="367.2" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Synthetic asset records</text>
+<path d="M634.4 233 H652.4" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="660.4" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="660.4" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="678.4" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">03</text>
+<text x="678.4" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Plan with A*</text>
+<text x="678.4" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Reachable approach point</text>
+<text x="678.4" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Avoid occupied cells</text>
+<path d="M945.6 233 H963.6" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="971.6" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="971.6" y="132" width="279.2" height="8" rx="4" fill="#4E43A4"/>
+<text x="989.6" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">04</text>
+<text x="989.6" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">First-person avatar</text>
+<text x="989.6" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Level view while walking</text>
+<text x="989.6" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Face target on arrival</text>
+<path d="M1256.8 233 H1274.8" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="1282.8" y="132" width="279.2" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="1282.8" y="132" width="279.2" height="8" rx="4" fill="#C36B49"/>
+<text x="1300.8" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">05</text>
+<text x="1300.8" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Simulated camera</text>
+<text x="1300.8" y="259" font-family="sans-serif" font-size="17" fill="#615C70">RGB + expected depth</text>
+<text x="1300.8" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Nearby service context</text>
+<text x="38" y="381" font-family="sans-serif" font-size="18" fill="#615C70">Manual controls → avatar pose. Image matching is not automatic physical asset identification.</text>
+</svg>

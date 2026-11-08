@@ -1,0 +1,28 @@
+{
+  "copied_source_and_documentation_files": 205,
+  "included_modules": [
+    "service_demo",
+    "avatar_demo",
+    "manual_labeler",
+    "capture_dataset",
+    "capture_dataset_dense",
+    "camera_spawn_soft",
+    "segment_dataset",
+    "feature_dataset",
+    "associate_dataset",
+    "semantic_scene",
+    "semantic_scene_plus",
+    "semantic_animation",
+    "semantic_showcase",
+    "asset_inspection",
+    "scripts",
+    "ros_scripts",
+    "tools"
+  ],
+  "company_snapshot_included": false,
+  "skipped": [
+    "service_demo/data/manual_annotations_supplied.json (bundled data; not source)",
+    "service_demo/data/workbook_snapshot.json (bundled data; not source)"
+  ],
+  "notice": "Review data permissions and staged files. This is not a runtime export or a Git push."
+}

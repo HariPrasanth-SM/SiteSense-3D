@@ -1,0 +1,6 @@
+# Lightweight dependencies only. Do not replace the working torch/gsplat installation.
+numpy
+scipy
+Pillow>=9.1
+PyYAML
+plyfile

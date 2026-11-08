@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-labelledby="title desc">
+<title id="title">From a scan to a walkable map</title><desc id="desc">Geometry first; inspect the candidate passages before presenting a route.</desc>
+<rect width="1600" height="420" rx="20" fill="#EEEAF1"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#4E43A4"/></marker></defs>
+<text x="38" y="41" font-family="sans-serif" font-weight="700" font-size="17" fill="#4E43A4">SITESENSE / SPACEBOTS</text>
+<text x="38" y="83" font-family="sans-serif" font-weight="700" font-size="32" fill="#29263E">From a scan to a walkable map</text>
+<text x="38" y="111" font-family="sans-serif" font-size="17" fill="#615C70">Geometry first; inspect the candidate passages before presenting a route.</text>
+<rect x="38.0" y="132" width="357.0" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="38.0" y="132" width="357.0" height="8" rx="4" fill="#4E43A4"/>
+<text x="56.0" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">01</text>
+<text x="56.0" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Gaussian scene</text>
+<text x="56.0" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Original room PLY</text>
+<text x="56.0" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Shared scene frame</text>
+<path d="M401.0 233 H419.0" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="427.0" y="132" width="357.0" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="427.0" y="132" width="357.0" height="8" rx="4" fill="#4E43A4"/>
+<text x="445.0" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">02</text>
+<text x="445.0" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Height slices</text>
+<text x="445.0" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Floor support</text>
+<text x="445.0" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Equipment / overhead</text>
+<path d="M790.0 233 H808.0" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="816.0" y="132" width="357.0" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="816.0" y="132" width="357.0" height="8" rx="4" fill="#4E43A4"/>
+<text x="834.0" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">03</text>
+<text x="834.0" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Occupancy grid</text>
+<text x="834.0" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Free, occupied, unknown</text>
+<text x="834.0" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Keep source evidence</text>
+<path d="M1179.0 233 H1197.0" stroke="#4E43A4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="1205.0" y="132" width="357.0" height="205" rx="15" fill="#FFFCFF" stroke="#D8D1DC"/>
+<rect x="1205.0" y="132" width="357.0" height="8" rx="4" fill="#C36B49"/>
+<text x="1223.0" y="172" font-family="sans-serif" font-size="15" fill="#C36B49" font-weight="700">04</text>
+<text x="1223.0" y="207" font-family="sans-serif" font-size="22" fill="#29263E" font-weight="700">Reviewed demo map</text>
+<text x="1223.0" y="259" font-family="sans-serif" font-size="17" fill="#615C70">Inspect RGB + depth</text>
+<text x="1223.0" y="282" font-family="sans-serif" font-size="17" fill="#615C70">Choose usable passages</text>
+<text x="38" y="381" font-family="sans-serif" font-size="18" fill="#615C70">Approximate Gaussian-derived geometry. The map is a planning aid, not verified physical collision geometry.</text>
+</svg>

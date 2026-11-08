@@ -1,0 +1,12 @@
+# Inventory from the staging interpreter; not an automatic installation recipe.
+numpy==2.2.6
+scipy==1.15.3
+Pillow==12.3.0
+PyYAML==6.0.3
+plyfile==1.1.5
+torch==2.14.1+cu126
+torchvision==0.29.1+cu126
+gsplat==1.5.3
+ultralytics==8.4.203
+opencv-python==5.0.0.93
+open3d==0.20.0

@@ -1,0 +1,15 @@
+{
+  "samples": 2048,
+  "appearance_min": 0.8,
+  "context_min": 0.55,
+  "surface_tol_m": 0.12,
+  "depth_abs_m": 0.1,
+  "depth_rel": 0.03,
+  "nn_min_fraction": 0.25,
+  "projection_min_fraction": 0.55,
+  "min_support_pixels": 16,
+  "min_visible_fraction": 0.05,
+  "max_front_conflict": 0.25,
+  "mask_dilation_px": 1,
+  "bounds_gate_m": 0.5
+}

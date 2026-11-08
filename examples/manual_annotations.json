@@ -1,0 +1,2749 @@
+{
+  "schema": "sitesense.manual_labels.v1",
+  "created_at": 1794103096.4088707,
+  "source": {
+    "schema": "sitesense.manual_label_source.v1",
+    "scene": "${PROJECT_ROOT}/data/Industrial Boiler Room.ply",
+    "scene_sha256": "83d8c7d99316c08c9719cfc2c5a6b9d1903b89847780e2458adc662c79f32955",
+    "map_yaml": "${PROJECT_ROOT}/outputs/ros/valmet_map.yaml",
+    "map_image": "${PROJECT_ROOT}/outputs/ros/valmet_map.pgm",
+    "map_yaml_sha256": "2382343c195c289781990659dd2357a83fdd8e2551e5edc3af9e6aa0c5f263db",
+    "map_image_sha256": "cff8976e40ce2860232ca3408fe9f106c22b92e975273a8d73beb2d151e35303",
+    "scale": 1.43,
+    "floor_y": 1.1,
+    "coordinate_frame": "map",
+    "units": "provisional_metres",
+    "transform": "x_map=s*x_GS; y_map=s*z_GS; z_map=s*(floor_y-y_GS)",
+    "original_demo_config_read_only": "${PROJECT_ROOT}/outputs/service_demo/main_v1/config.json"
+  },
+  "frame": "map",
+  "units": "provisional_metres",
+  "objects": [
+    {
+      "object_id": "manual_0001",
+      "label": "P-002",
+      "category": "Process Pump",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794101666.9150677,
+      "updated_at": 1794101666.9150681,
+      "target_map_xyz": [
+        -4.56161713681941,
+        -1.7562521693759918,
+        0.7024812814744055
+      ],
+      "target_scene_xyz": [
+        -3.1899420537198675,
+        0.6087543486192969,
+        -1.2281483701930014
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          -5.468559741973877,
+          -1.2217265367507935,
+          0.6581880450248718
+        ],
+        "extent": [
+          2.283021926879883,
+          1.749169111251831,
+          1.3138467073440552
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          -6.610070705413818,
+          -2.096311092376709,
+          0.0012646913528442383
+        ],
+        [
+          -6.610070705413818,
+          -2.096311092376709,
+          1.3151113986968994
+        ],
+        [
+          -6.610070705413818,
+          -0.34714198112487793,
+          0.0012646913528442383
+        ],
+        [
+          -6.610070705413818,
+          -0.34714198112487793,
+          1.3151113986968994
+        ],
+        [
+          -4.3270487785339355,
+          -2.096311092376709,
+          0.0012646913528442383
+        ],
+        [
+          -4.3270487785339355,
+          -2.096311092376709,
+          1.3151113986968994
+        ],
+        [
+          -4.3270487785339355,
+          -0.34714198112487793,
+          0.0012646913528442383
+        ],
+        [
+          -4.3270487785339355,
+          -0.34714198112487793,
+          1.3151113986968994
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          -4.62242706672295,
+          1.0991156004525564,
+          -1.4659518128508455
+        ],
+        [
+          -4.62242706672295,
+          0.18034167923293745,
+          -1.4659518128508455
+        ],
+        [
+          -4.62242706672295,
+          1.0991156004525564,
+          -0.2427566301572573
+        ],
+        [
+          -4.62242706672295,
+          0.18034167923293745,
+          -0.2427566301572573
+        ],
+        [
+          -3.025908236737018,
+          1.0991156004525564,
+          -1.4659518128508455
+        ],
+        [
+          -3.025908236737018,
+          0.18034167923293745,
+          -1.4659518128508455
+        ],
+        [
+          -3.025908236737018,
+          1.0991156004525564,
+          -0.2427566301572573
+        ],
+        [
+          -3.025908236737018,
+          0.18034167923293745,
+          -0.2427566301572573
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          -5.468559741973877,
+          -1.2217265367507935,
+          0.6581880450248718
+        ],
+        "extent": [
+          2.283021926879883,
+          1.749169111251831,
+          1.3138467073440552
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0001/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0001/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0001/revisions/rev0001/cloud_scene.ply",
+      "point_count": 15566,
+      "observations": [
+        {
+          "id": "view_20261108_033426_461f25b9",
+          "path": "objects/manual_0001/observations/view_20261108_033426_461f25b9/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0001/observations/view_20261108_033426_461f25b9/object_crop.png",
+      "reference_overlay": "objects/manual_0001/observations/view_20261108_033426_461f25b9/overlay.png",
+      "reference_camera": "objects/manual_0001/observations/view_20261108_033426_461f25b9/camera.json",
+      "reference_camera_pose": {
+        "x": -2.3628146092538174,
+        "y": -2.494959523123054,
+        "yaw_rad": -3.0892342002157633,
+        "camera_height_m": 1.7,
+        "pitch_deg": 0.0
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0002",
+      "label": "P-004",
+      "category": "Process Pump",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794101805.4195328,
+      "updated_at": 1794101805.419533,
+      "target_map_xyz": [
+        -4.644440601535646,
+        -1.7084659245934897,
+        0.633000774894849
+      ],
+      "target_scene_xyz": [
+        -3.2478605605144377,
+        0.6573421154581476,
+        -1.1947314157996431
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          -5.708512306213379,
+          -1.0505380630493164,
+          0.5976473093032837
+        ],
+        "extent": [
+          2.597133159637451,
+          1.9046802520751953,
+          1.3724660873413086
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          -7.0070788860321045,
+          -2.002878189086914,
+          -0.0885857343673706
+        ],
+        [
+          -7.0070788860321045,
+          -2.002878189086914,
+          1.283880352973938
+        ],
+        [
+          -7.0070788860321045,
+          -0.09819793701171875,
+          -0.0885857343673706
+        ],
+        [
+          -7.0070788860321045,
+          -0.09819793701171875,
+          1.283880352973938
+        ],
+        [
+          -4.409945726394653,
+          -2.002878189086914,
+          -0.0885857343673706
+        ],
+        [
+          -4.409945726394653,
+          -2.002878189086914,
+          1.283880352973938
+        ],
+        [
+          -4.409945726394653,
+          -0.09819793701171875,
+          -0.0885857343673706
+        ],
+        [
+          -4.409945726394653,
+          -0.09819793701171875,
+          1.283880352973938
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          -4.900055165057416,
+          1.1619480659911683,
+          -1.4006141182425973
+        ],
+        [
+          -4.900055165057416,
+          0.2021815713468965,
+          -1.4006141182425973
+        ],
+        [
+          -4.900055165057416,
+          1.1619480659911683,
+          -0.06866988602218095
+        ],
+        [
+          -4.900055165057416,
+          0.2021815713468965,
+          -0.06866988602218095
+        ],
+        [
+          -3.0838781303459117,
+          1.1619480659911683,
+          -1.4006141182425973
+        ],
+        [
+          -3.0838781303459117,
+          0.2021815713468965,
+          -1.4006141182425973
+        ],
+        [
+          -3.0838781303459117,
+          1.1619480659911683,
+          -0.06866988602218095
+        ],
+        [
+          -3.0838781303459117,
+          0.2021815713468965,
+          -0.06866988602218095
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          -5.708512306213379,
+          -1.0505380630493164,
+          0.5976473093032837
+        ],
+        "extent": [
+          2.597133159637451,
+          1.9046802520751953,
+          1.3724660873413086
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0002/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0002/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0002/revisions/rev0001/cloud_scene.ply",
+      "point_count": 17351,
+      "observations": [
+        {
+          "id": "view_20261108_033644_b0578b40",
+          "path": "objects/manual_0002/observations/view_20261108_033644_b0578b40/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0002/observations/view_20261108_033644_b0578b40/object_crop.png",
+      "reference_overlay": "objects/manual_0002/observations/view_20261108_033644_b0578b40/overlay.png",
+      "reference_camera": "objects/manual_0002/observations/view_20261108_033644_b0578b40/camera.json",
+      "reference_camera_pose": {
+        "x": -3.1684655213673336,
+        "y": -2.1863434604868606,
+        "yaw_rad": 3.0839641178004396,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0003",
+      "label": "M-001",
+      "category": "Electric Motor",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794101911.665088,
+      "updated_at": 1794101911.6650884,
+      "target_map_xyz": [
+        -3.83509163569665,
+        -0.14653438167695707,
+        1.280719748304811
+      ],
+      "target_scene_xyz": [
+        -2.68188226272493,
+        0.20439178440223008,
+        -0.10247159557829166
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          -3.7915263175964355,
+          -0.07783535867929459,
+          1.217496395111084
+        ],
+        "extent": [
+          0.19105863571166992,
+          0.4862433075904846,
+          0.2986384630203247
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          -3.8870556354522705,
+          -0.3209570124745369,
+          1.0681771636009216
+        ],
+        [
+          -3.8870556354522705,
+          -0.3209570124745369,
+          1.3668156266212463
+        ],
+        [
+          -3.8870556354522705,
+          0.16528629511594772,
+          1.0681771636009216
+        ],
+        [
+          -3.8870556354522705,
+          0.16528629511594772,
+          1.3668156266212463
+        ],
+        [
+          -3.6959969997406006,
+          -0.3209570124745369,
+          1.0681771636009216
+        ],
+        [
+          -3.6959969997406006,
+          -0.3209570124745369,
+          1.3668156266212463
+        ],
+        [
+          -3.6959969997406006,
+          0.16528629511594772,
+          1.0681771636009216
+        ],
+        [
+          -3.6959969997406006,
+          0.16528629511594772,
+          1.3668156266212463
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          -2.718220724092497,
+          0.353022962516838,
+          -0.22444546326890694
+        ],
+        [
+          -2.718220724092497,
+          0.1441848764886389,
+          -0.22444546326890694
+        ],
+        [
+          -2.718220724092497,
+          0.353022962516838,
+          0.115584821759404
+        ],
+        [
+          -2.718220724092497,
+          0.1441848764886389,
+          0.115584821759404
+        ],
+        [
+          -2.5846132865318885,
+          0.353022962516838,
+          -0.22444546326890694
+        ],
+        [
+          -2.5846132865318885,
+          0.1441848764886389,
+          -0.22444546326890694
+        ],
+        [
+          -2.5846132865318885,
+          0.353022962516838,
+          0.115584821759404
+        ],
+        [
+          -2.5846132865318885,
+          0.1441848764886389,
+          0.115584821759404
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          -3.7915263175964355,
+          -0.07783535867929459,
+          1.217496395111084
+        ],
+        "extent": [
+          0.19105863571166992,
+          0.4862433075904846,
+          0.2986384630203247
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0003/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0003/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0003/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1881,
+      "observations": [
+        {
+          "id": "view_20261108_033831_74c16c22",
+          "path": "objects/manual_0003/observations/view_20261108_033831_74c16c22/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0003/observations/view_20261108_033831_74c16c22/object_crop.png",
+      "reference_overlay": "objects/manual_0003/observations/view_20261108_033831_74c16c22/overlay.png",
+      "reference_camera": "objects/manual_0003/observations/view_20261108_033831_74c16c22/camera.json",
+      "reference_camera_pose": {
+        "x": -4.249252389663056,
+        "y": -0.857577897410641,
+        "yaw_rad": 0.7106896439098347,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0004",
+      "label": "CV-002",
+      "category": "Control Valve",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102009.7098079,
+      "updated_at": 1794102009.709808,
+      "target_map_xyz": [
+        -5.042168621943346,
+        4.361264552146268,
+        0.8217505882193515
+      ],
+      "target_scene_xyz": [
+        -3.525992043317025,
+        0.5253492390074465,
+        3.0498353511512364
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          -4.992006301879883,
+          4.59166145324707,
+          0.6244937181472778
+        ],
+        "extent": [
+          0.2927999496459961,
+          0.5663962364196777,
+          0.565874457359314
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          -5.138406276702881,
+          4.3084633350372314,
+          0.34155648946762085
+        ],
+        [
+          -5.138406276702881,
+          4.3084633350372314,
+          0.9074309468269348
+        ],
+        [
+          -5.138406276702881,
+          4.874859571456909,
+          0.34155648946762085
+        ],
+        [
+          -5.138406276702881,
+          4.874859571456909,
+          0.9074309468269348
+        ],
+        [
+          -4.845606327056885,
+          4.3084633350372314,
+          0.34155648946762085
+        ],
+        [
+          -4.845606327056885,
+          4.3084633350372314,
+          0.9074309468269348
+        ],
+        [
+          -4.845606327056885,
+          4.874859571456909,
+          0.34155648946762085
+        ],
+        [
+          -4.845606327056885,
+          4.874859571456909,
+          0.9074309468269348
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          -3.5932911025894274,
+          0.8611493080646008,
+          3.0129114231029592
+        ],
+        [
+          -3.5932911025894274,
+          0.46543290431682877,
+          3.0129114231029592
+        ],
+        [
+          -3.5932911025894274,
+          0.8611493080646008,
+          3.408992707312524
+        ],
+        [
+          -3.5932911025894274,
+          0.46543290431682877,
+          3.408992707312524
+        ],
+        [
+          -3.3885358930467726,
+          0.8611493080646008,
+          3.0129114231029592
+        ],
+        [
+          -3.3885358930467726,
+          0.46543290431682877,
+          3.0129114231029592
+        ],
+        [
+          -3.3885358930467726,
+          0.8611493080646008,
+          3.408992707312524
+        ],
+        [
+          -3.3885358930467726,
+          0.46543290431682877,
+          3.408992707312524
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          -4.992006301879883,
+          4.59166145324707,
+          0.6244937181472778
+        ],
+        "extent": [
+          0.2927999496459961,
+          0.5663962364196777,
+          0.565874457359314
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0004/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0004/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0004/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1327,
+      "observations": [
+        {
+          "id": "view_20261108_034009_f933b2be",
+          "path": "objects/manual_0004/observations/view_20261108_034009_f933b2be/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0004/observations/view_20261108_034009_f933b2be/object_crop.png",
+      "reference_overlay": "objects/manual_0004/observations/view_20261108_034009_f933b2be/overlay.png",
+      "reference_camera": "objects/manual_0004/observations/view_20261108_034009_f933b2be/camera.json",
+      "reference_camera_pose": {
+        "x": -5.356020478427636,
+        "y": 3.1065113854587576,
+        "yaw_rad": 1.753335194911446,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0005",
+      "label": "PT-001",
+      "category": "Pressure Transmitter",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102153.9001372,
+      "updated_at": 1794102153.9001374,
+      "target_map_xyz": [
+        5.8252806769260586,
+        3.6211984328120486,
+        1.3502707985685516
+      ],
+      "target_scene_xyz": [
+        4.073622850997244,
+        0.15575468631569817,
+        2.532306596372062
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          5.783746719360352,
+          3.517773151397705,
+          1.3386634588241577
+        ],
+        "extent": [
+          0.6819796562194824,
+          0.3191659450531006,
+          0.3404109477996826
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          5.44275689125061,
+          3.358190178871155,
+          1.1684579849243164
+        ],
+        [
+          5.44275689125061,
+          3.358190178871155,
+          1.508868932723999
+        ],
+        [
+          5.44275689125061,
+          3.6773561239242554,
+          1.1684579849243164
+        ],
+        [
+          5.44275689125061,
+          3.6773561239242554,
+          1.508868932723999
+        ],
+        [
+          6.124736547470093,
+          3.358190178871155,
+          1.1684579849243164
+        ],
+        [
+          6.124736547470093,
+          3.358190178871155,
+          1.508868932723999
+        ],
+        [
+          6.124736547470093,
+          3.6773561239242554,
+          1.1684579849243164
+        ],
+        [
+          6.124736547470093,
+          3.6773561239242554,
+          1.508868932723999
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          3.8061237001752524,
+          0.28289651403893956,
+          2.348384740469339
+        ],
+        [
+          3.8061237001752524,
+          0.04484690019300765,
+          2.348384740469339
+        ],
+        [
+          3.8061237001752524,
+          0.28289651403893956,
+          2.571577709037941
+        ],
+        [
+          3.8061237001752524,
+          0.04484690019300765,
+          2.571577709037941
+        ],
+        [
+          4.283032550678387,
+          0.28289651403893956,
+          2.348384740469339
+        ],
+        [
+          4.283032550678387,
+          0.04484690019300765,
+          2.348384740469339
+        ],
+        [
+          4.283032550678387,
+          0.28289651403893956,
+          2.571577709037941
+        ],
+        [
+          4.283032550678387,
+          0.04484690019300765,
+          2.571577709037941
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          5.783746719360352,
+          3.517773151397705,
+          1.3386634588241577
+        ],
+        "extent": [
+          0.6819796562194824,
+          0.3191659450531006,
+          0.3404109477996826
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0005/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0005/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0005/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1569,
+      "observations": [
+        {
+          "id": "view_20261108_034233_a2683148",
+          "path": "objects/manual_0005/observations/view_20261108_034233_a2683148/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0005/observations/view_20261108_034233_a2683148/object_crop.png",
+      "reference_overlay": "objects/manual_0005/observations/view_20261108_034233_a2683148/overlay.png",
+      "reference_camera": "objects/manual_0005/observations/view_20261108_034233_a2683148/camera.json",
+      "reference_camera_pose": {
+        "x": 3.9139796084343517,
+        "y": 3.743897679721197,
+        "yaw_rad": 0.01430687996335811,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0006",
+      "label": "PT-003",
+      "category": "Pressure Transmitter",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102194.4858804,
+      "updated_at": 1794102194.4858809,
+      "target_map_xyz": [
+        3.578587561800437,
+        4.872268504890375,
+        1.4988857844776222
+      ],
+      "target_scene_xyz": [
+        2.5025087844758303,
+        0.05182812274292149,
+        3.407180772650612
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          3.3813107013702393,
+          4.931321144104004,
+          1.4068489074707031
+        ],
+        "extent": [
+          0.5338220596313477,
+          0.762239933013916,
+          0.4252537488937378
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          3.1143996715545654,
+          4.550201177597046,
+          1.1942220330238342
+        ],
+        [
+          3.1143996715545654,
+          4.550201177597046,
+          1.619475781917572
+        ],
+        [
+          3.1143996715545654,
+          5.312441110610962,
+          1.1942220330238342
+        ],
+        [
+          3.1143996715545654,
+          5.312441110610962,
+          1.619475781917572
+        ],
+        [
+          3.648221731185913,
+          4.550201177597046,
+          1.1942220330238342
+        ],
+        [
+          3.648221731185913,
+          4.550201177597046,
+          1.619475781917572
+        ],
+        [
+          3.648221731185913,
+          5.312441110610962,
+          1.1942220330238342
+        ],
+        [
+          3.648221731185913,
+          5.312441110610962,
+          1.619475781917572
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          2.177901868219976,
+          0.2648796971861299,
+          3.1819588654524797
+        ],
+        [
+          2.177901868219976,
+          -0.032500546795504945,
+          3.1819588654524797
+        ],
+        [
+          2.177901868219976,
+          0.2648796971861299,
+          3.7149937836440294
+        ],
+        [
+          2.177901868219976,
+          -0.032500546795504945,
+          3.7149937836440294
+        ],
+        [
+          2.551204007822317,
+          0.2648796971861299,
+          3.1819588654524797
+        ],
+        [
+          2.551204007822317,
+          -0.032500546795504945,
+          3.1819588654524797
+        ],
+        [
+          2.551204007822317,
+          0.2648796971861299,
+          3.7149937836440294
+        ],
+        [
+          2.551204007822317,
+          -0.032500546795504945,
+          3.7149937836440294
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          3.3813107013702393,
+          4.931321144104004,
+          1.4068489074707031
+        ],
+        "extent": [
+          0.5338220596313477,
+          0.762239933013916,
+          0.4252537488937378
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0006/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0006/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0006/revisions/rev0001/cloud_scene.ply",
+      "point_count": 3847,
+      "observations": [
+        {
+          "id": "view_20261108_034314_29fa1394",
+          "path": "objects/manual_0006/observations/view_20261108_034314_29fa1394/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0006/observations/view_20261108_034314_29fa1394/object_crop.png",
+      "reference_overlay": "objects/manual_0006/observations/view_20261108_034314_29fa1394/overlay.png",
+      "reference_camera": "objects/manual_0006/observations/view_20261108_034314_29fa1394/camera.json",
+      "reference_camera_pose": {
+        "x": 3.9139796084343517,
+        "y": 3.743897679721197,
+        "yaw_rad": 1.5922563922798085,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0007",
+      "label": "M-003",
+      "category": "Electric Motor",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102460.4672167,
+      "updated_at": 1794102460.4672172,
+      "target_map_xyz": [
+        3.1268484410336437,
+        -4.72019354452839,
+        1.6407762039524922
+      ],
+      "target_scene_xyz": [
+        2.1866073014221286,
+        -0.04739594681992468,
+        -3.3008346465233496
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          2.7178597450256348,
+          -5.128247261047363,
+          1.5872639417648315
+        ],
+        "extent": [
+          1.078235149383545,
+          1.0258846282958984,
+          0.3888568878173828
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          2.1787421703338623,
+          -5.6411895751953125,
+          1.3928354978561401
+        ],
+        [
+          2.1787421703338623,
+          -5.6411895751953125,
+          1.781692385673523
+        ],
+        [
+          2.1787421703338623,
+          -4.615304946899414,
+          1.3928354978561401
+        ],
+        [
+          2.1787421703338623,
+          -4.615304946899414,
+          1.781692385673523
+        ],
+        [
+          3.2569773197174072,
+          -5.6411895751953125,
+          1.3928354978561401
+        ],
+        [
+          3.2569773197174072,
+          -5.6411895751953125,
+          1.781692385673523
+        ],
+        [
+          3.2569773197174072,
+          -4.615304946899414,
+          1.3928354978561401
+        ],
+        [
+          3.2569773197174072,
+          -4.615304946899414,
+          1.781692385673523
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          1.5235959233103933,
+          0.12598916233836352,
+          -3.944887814821897
+        ],
+        [
+          1.5235959233103933,
+          -0.14593873124022588,
+          -3.944887814821897
+        ],
+        [
+          1.5235959233103933,
+          0.12598916233836352,
+          -3.227485976852737
+        ],
+        [
+          1.5235959233103933,
+          -0.14593873124022588,
+          -3.227485976852737
+        ],
+        [
+          2.2776065172849003,
+          0.12598916233836352,
+          -3.944887814821897
+        ],
+        [
+          2.2776065172849003,
+          -0.14593873124022588,
+          -3.944887814821897
+        ],
+        [
+          2.2776065172849003,
+          0.12598916233836352,
+          -3.227485976852737
+        ],
+        [
+          2.2776065172849003,
+          -0.14593873124022588,
+          -3.227485976852737
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          2.7178597450256348,
+          -5.128247261047363,
+          1.5872639417648315
+        ],
+        "extent": [
+          1.078235149383545,
+          1.0258846282958984,
+          0.3888568878173828
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0007/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0007/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0007/revisions/rev0001/cloud_scene.ply",
+      "point_count": 2649,
+      "observations": [
+        {
+          "id": "view_20261108_034740_5fe4cb20",
+          "path": "objects/manual_0007/observations/view_20261108_034740_5fe4cb20/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0007/observations/view_20261108_034740_5fe4cb20/object_crop.png",
+      "reference_overlay": "objects/manual_0007/observations/view_20261108_034740_5fe4cb20/overlay.png",
+      "reference_camera": "objects/manual_0007/observations/view_20261108_034740_5fe4cb20/camera.json",
+      "reference_camera_pose": {
+        "x": 3.953260182926047,
+        "y": -3.5145361241971296,
+        "yaw_rad": -1.5369684676365902,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0008",
+      "label": "CV-005",
+      "category": "Control Valve",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102515.5675104,
+      "updated_at": 1794102515.5675106,
+      "target_map_xyz": [
+        3.1329251764589046,
+        -4.690529295772723,
+        0.8761740424228308
+      ],
+      "target_scene_xyz": [
+        2.1908567667544787,
+        0.4872908794245938,
+        -3.280090416624282
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          2.806087017059326,
+          -4.97553825378418,
+          0.6822624206542969
+        ],
+        "extent": [
+          0.7951202392578125,
+          0.76153564453125,
+          0.6176871061325073
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          2.40852689743042,
+          -5.356306076049805,
+          0.3734188675880432
+        ],
+        [
+          2.40852689743042,
+          -5.356306076049805,
+          0.9911059737205505
+        ],
+        [
+          2.40852689743042,
+          -4.594770431518555,
+          0.3734188675880432
+        ],
+        [
+          2.40852689743042,
+          -4.594770431518555,
+          0.9911059737205505
+        ],
+        [
+          3.2036471366882324,
+          -5.356306076049805,
+          0.3734188675880432
+        ],
+        [
+          3.2036471366882324,
+          -5.356306076049805,
+          0.9911059737205505
+        ],
+        [
+          3.2036471366882324,
+          -4.594770431518555,
+          0.3734188675880432
+        ],
+        [
+          3.2036471366882324,
+          -4.594770431518555,
+          0.9911059737205505
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          1.6842845436576364,
+          0.8388679247636062,
+          -3.7456685846502134
+        ],
+        [
+          1.6842845436576364,
+          0.4069188994961185,
+          -3.7456685846502134
+        ],
+        [
+          1.6842845436576364,
+          0.8388679247636062,
+          -3.2131261758871013
+        ],
+        [
+          1.6842845436576364,
+          0.4069188994961185,
+          -3.2131261758871013
+        ],
+        [
+          2.240312682998764,
+          0.8388679247636062,
+          -3.7456685846502134
+        ],
+        [
+          2.240312682998764,
+          0.4069188994961185,
+          -3.7456685846502134
+        ],
+        [
+          2.240312682998764,
+          0.8388679247636062,
+          -3.2131261758871013
+        ],
+        [
+          2.240312682998764,
+          0.4069188994961185,
+          -3.2131261758871013
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          2.806087017059326,
+          -4.97553825378418,
+          0.6822624206542969
+        ],
+        "extent": [
+          0.7951202392578125,
+          0.76153564453125,
+          0.6176871061325073
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0008/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0008/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0008/revisions/rev0001/cloud_scene.ply",
+      "point_count": 2190,
+      "observations": [
+        {
+          "id": "view_20261108_034835_35fb89a5",
+          "path": "objects/manual_0008/observations/view_20261108_034835_35fb89a5/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0008/observations/view_20261108_034835_35fb89a5/object_crop.png",
+      "reference_overlay": "objects/manual_0008/observations/view_20261108_034835_35fb89a5/overlay.png",
+      "reference_camera": "objects/manual_0008/observations/view_20261108_034835_35fb89a5/camera.json",
+      "reference_camera_pose": {
+        "x": 3.953260182926047,
+        "y": -3.5145361241971296,
+        "yaw_rad": -1.5369684676365902,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0009",
+      "label": "CV-004",
+      "category": "Control Valve",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102538.818669,
+      "updated_at": 1794102538.8186696,
+      "target_map_xyz": [
+        3.898206071611501,
+        -4.673344332213648,
+        0.9024243383130812
+      ],
+      "target_scene_xyz": [
+        2.7260182318961546,
+        0.46893402915169147,
+        -3.2680729595899636
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          3.8839895725250244,
+          -5.0064802169799805,
+          0.6122920513153076
+        ],
+        "extent": [
+          0.3088221549987793,
+          0.7945857048034668,
+          0.7564842104911804
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          3.7295784950256348,
+          -5.403773069381714,
+          0.2340499460697174
+        ],
+        [
+          3.7295784950256348,
+          -5.403773069381714,
+          0.9905341565608978
+        ],
+        [
+          3.7295784950256348,
+          -4.609187364578247,
+          0.2340499460697174
+        ],
+        [
+          3.7295784950256348,
+          -4.609187364578247,
+          0.9905341565608978
+        ],
+        [
+          4.038400650024414,
+          -5.403773069381714,
+          0.2340499460697174
+        ],
+        [
+          4.038400650024414,
+          -5.403773069381714,
+          0.9905341565608978
+        ],
+        [
+          4.038400650024414,
+          -4.609187364578247,
+          0.2340499460697174
+        ],
+        [
+          4.038400650024414,
+          -4.609187364578247,
+          0.9905341565608978
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          2.6080968496682764,
+          0.9363287090421557,
+          -3.778862286280919
+        ],
+        [
+          2.6080968496682764,
+          0.40731877163573577,
+          -3.778862286280919
+        ],
+        [
+          2.6080968496682764,
+          0.9363287090421557,
+          -3.2232079472575155
+        ],
+        [
+          2.6080968496682764,
+          0.40731877163573577,
+          -3.2232079472575155
+        ],
+        [
+          2.8240563986184717,
+          0.9363287090421557,
+          -3.778862286280919
+        ],
+        [
+          2.8240563986184717,
+          0.40731877163573577,
+          -3.778862286280919
+        ],
+        [
+          2.8240563986184717,
+          0.9363287090421557,
+          -3.2232079472575155
+        ],
+        [
+          2.8240563986184717,
+          0.40731877163573577,
+          -3.2232079472575155
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          3.8839895725250244,
+          -5.0064802169799805,
+          0.6122920513153076
+        ],
+        "extent": [
+          0.3088221549987793,
+          0.7945857048034668,
+          0.7564842104911804
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0009/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0009/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0009/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1587,
+      "observations": [
+        {
+          "id": "view_20261108_034858_cdbc6513",
+          "path": "objects/manual_0009/observations/view_20261108_034858_cdbc6513/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0009/observations/view_20261108_034858_cdbc6513/object_crop.png",
+      "reference_overlay": "objects/manual_0009/observations/view_20261108_034858_cdbc6513/overlay.png",
+      "reference_camera": "objects/manual_0009/observations/view_20261108_034858_cdbc6513/camera.json",
+      "reference_camera_pose": {
+        "x": 3.953260182926047,
+        "y": -3.5145361241971296,
+        "yaw_rad": -1.5369684676365902,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0010",
+      "label": "M-005",
+      "category": "Electric Motor",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102586.86266,
+      "updated_at": 1794102586.8626604,
+      "target_map_xyz": [
+        3.9056080368139754,
+        -4.797539638136356,
+        1.6466577289237871
+      ],
+      "target_scene_xyz": [
+        2.7311944313384444,
+        -0.05150890134530573,
+        -3.354922823871578
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          3.883389711380005,
+          -5.1041154861450195,
+          1.6262805461883545
+        ],
+        "extent": [
+          0.2041788101196289,
+          0.6928019523620605,
+          0.15986263751983643
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          3.7813003063201904,
+          -5.45051646232605,
+          1.5463492274284363
+        ],
+        [
+          3.7813003063201904,
+          -5.45051646232605,
+          1.7062118649482727
+        ],
+        [
+          3.7813003063201904,
+          -4.757714509963989,
+          1.5463492274284363
+        ],
+        [
+          3.7813003063201904,
+          -4.757714509963989,
+          1.7062118649482727
+        ],
+        [
+          3.9854791164398193,
+          -5.45051646232605,
+          1.5463492274284363
+        ],
+        [
+          3.9854791164398193,
+          -5.45051646232605,
+          1.7062118649482727
+        ],
+        [
+          3.9854791164398193,
+          -4.757714509963989,
+          1.5463492274284363
+        ],
+        [
+          3.9854791164398193,
+          -4.757714509963989,
+          1.7062118649482727
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          2.644265948475658,
+          0.018636903896198376,
+          -3.8115499736545804
+        ],
+        [
+          2.644265948475658,
+          -0.09315515031347746,
+          -3.8115499736545804
+        ],
+        [
+          2.644265948475658,
+          0.018636903896198376,
+          -3.3270730838909017
+        ],
+        [
+          2.644265948475658,
+          -0.09315515031347746,
+          -3.3270730838909017
+        ],
+        [
+          2.787048333174699,
+          0.018636903896198376,
+          -3.8115499736545804
+        ],
+        [
+          2.787048333174699,
+          -0.09315515031347746,
+          -3.8115499736545804
+        ],
+        [
+          2.787048333174699,
+          0.018636903896198376,
+          -3.3270730838909017
+        ],
+        [
+          2.787048333174699,
+          -0.09315515031347746,
+          -3.3270730838909017
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          3.883389711380005,
+          -5.1041154861450195,
+          1.6262805461883545
+        ],
+        "extent": [
+          0.2041788101196289,
+          0.6928019523620605,
+          0.15986263751983643
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0010/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0010/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0010/revisions/rev0001/cloud_scene.ply",
+      "point_count": 651,
+      "observations": [
+        {
+          "id": "view_20261108_034946_70af485d",
+          "path": "objects/manual_0010/observations/view_20261108_034946_70af485d/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0010/observations/view_20261108_034946_70af485d/object_crop.png",
+      "reference_overlay": "objects/manual_0010/observations/view_20261108_034946_70af485d/overlay.png",
+      "reference_camera": "objects/manual_0010/observations/view_20261108_034946_70af485d/camera.json",
+      "reference_camera_pose": {
+        "x": 3.953260182926047,
+        "y": -3.5145361241971296,
+        "yaw_rad": -1.5369684676365902,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0011",
+      "label": "M-002",
+      "category": "Electric Motor",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102686.9134362,
+      "updated_at": 1794102686.9134364,
+      "target_map_xyz": [
+        5.510401004436142,
+        -4.175353366004282,
+        1.639883274108862
+      ],
+      "target_scene_xyz": [
+        3.8534272758294703,
+        -0.04677152035584761,
+        -2.9198275286743236
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          5.834195137023926,
+          -4.435269355773926,
+          1.596876621246338
+        ],
+        "extent": [
+          0.8001246452331543,
+          0.728790283203125,
+          0.2930973768234253
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          5.434132814407349,
+          -4.799664497375488,
+          1.4503279328346252
+        ],
+        [
+          5.434132814407349,
+          -4.799664497375488,
+          1.7434253096580505
+        ],
+        [
+          5.434132814407349,
+          -4.070874214172363,
+          1.4503279328346252
+        ],
+        [
+          5.434132814407349,
+          -4.070874214172363,
+          1.7434253096580505
+        ],
+        [
+          6.234257459640503,
+          -4.799664497375488,
+          1.4503279328346252
+        ],
+        [
+          6.234257459640503,
+          -4.799664497375488,
+          1.7434253096580505
+        ],
+        [
+          6.234257459640503,
+          -4.070874214172363,
+          1.4503279328346252
+        ],
+        [
+          6.234257459640503,
+          -4.070874214172363,
+          1.7434253096580505
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          3.8000928772079363,
+          0.0857846623534089,
+          -3.3564087394234186
+        ],
+        [
+          3.8000928772079363,
+          -0.119178538222413,
+          -3.3564087394234186
+        ],
+        [
+          3.8000928772079363,
+          0.0857846623534089,
+          -2.8467651847359186
+        ],
+        [
+          3.8000928772079363,
+          -0.119178538222413,
+          -2.8467651847359186
+        ],
+        [
+          4.359620601147205,
+          0.0857846623534089,
+          -3.3564087394234186
+        ],
+        [
+          4.359620601147205,
+          -0.119178538222413,
+          -3.3564087394234186
+        ],
+        [
+          4.359620601147205,
+          0.0857846623534089,
+          -2.8467651847359186
+        ],
+        [
+          4.359620601147205,
+          -0.119178538222413,
+          -2.8467651847359186
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          5.834195137023926,
+          -4.435269355773926,
+          1.596876621246338
+        ],
+        "extent": [
+          0.8001246452331543,
+          0.728790283203125,
+          0.2930973768234253
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0011/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0011/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0011/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1169,
+      "observations": [
+        {
+          "id": "view_20261108_035126_29ef02eb",
+          "path": "objects/manual_0011/observations/view_20261108_035126_29ef02eb/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0011/observations/view_20261108_035126_29ef02eb/object_crop.png",
+      "reference_overlay": "objects/manual_0011/observations/view_20261108_035126_29ef02eb/overlay.png",
+      "reference_camera": "objects/manual_0011/observations/view_20261108_035126_29ef02eb/camera.json",
+      "reference_camera_pose": {
+        "x": 4.201460713355485,
+        "y": -3.3355211427331835,
+        "yaw_rad": -0.4937687711144969,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0012",
+      "label": "CV-006",
+      "category": "Control Valve",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102718.2932062,
+      "updated_at": 1794102718.2932065,
+      "target_map_xyz": [
+        5.48033797955086,
+        -4.234750744604035,
+        0.930364610662393
+      ],
+      "target_scene_xyz": [
+        3.8324041815040983,
+        0.4493953771591658,
+        -2.961364157065759
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          5.739612102508545,
+          -4.375507354736328,
+          0.7535797357559204
+        ],
+        "extent": [
+          0.6873903274536133,
+          0.49125242233276367,
+          0.5308796763420105
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          5.395916938781738,
+          -4.62113356590271,
+          0.48813989758491516
+        ],
+        [
+          5.395916938781738,
+          -4.62113356590271,
+          1.0190195739269257
+        ],
+        [
+          5.395916938781738,
+          -4.129881143569946,
+          0.48813989758491516
+        ],
+        [
+          5.395916938781738,
+          -4.129881143569946,
+          1.0190195739269257
+        ],
+        [
+          6.083307266235352,
+          -4.62113356590271,
+          0.48813989758491516
+        ],
+        [
+          6.083307266235352,
+          -4.62113356590271,
+          1.0190195739269257
+        ],
+        [
+          6.083307266235352,
+          -4.129881143569946,
+          0.48813989758491516
+        ],
+        [
+          6.083307266235352,
+          -4.129881143569946,
+          1.0190195739269257
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          3.7733684886585586,
+          0.7586434282622971,
+          -3.2315619341976993
+        ],
+        [
+          3.7733684886585586,
+          0.3873988993518002,
+          -3.2315619341976993
+        ],
+        [
+          3.7733684886585586,
+          0.7586434282622971,
+          -2.8880287717272353
+        ],
+        [
+          3.7733684886585586,
+          0.3873988993518002,
+          -2.8880287717272353
+        ],
+        [
+          4.254061025339407,
+          0.7586434282622971,
+          -3.2315619341976993
+        ],
+        [
+          4.254061025339407,
+          0.3873988993518002,
+          -3.2315619341976993
+        ],
+        [
+          4.254061025339407,
+          0.7586434282622971,
+          -2.8880287717272353
+        ],
+        [
+          4.254061025339407,
+          0.3873988993518002,
+          -2.8880287717272353
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          5.739612102508545,
+          -4.375507354736328,
+          0.7535797357559204
+        ],
+        "extent": [
+          0.6873903274536133,
+          0.49125242233276367,
+          0.5308796763420105
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0012/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0012/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0012/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1174,
+      "observations": [
+        {
+          "id": "view_20261108_035157_12938a53",
+          "path": "objects/manual_0012/observations/view_20261108_035157_12938a53/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0012/observations/view_20261108_035157_12938a53/object_crop.png",
+      "reference_overlay": "objects/manual_0012/observations/view_20261108_035157_12938a53/overlay.png",
+      "reference_camera": "objects/manual_0012/observations/view_20261108_035157_12938a53/camera.json",
+      "reference_camera_pose": {
+        "x": 4.201460713355485,
+        "y": -3.3355211427331835,
+        "yaw_rad": -0.4937687711144969,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0013",
+      "label": "CV-008",
+      "category": "Control Valve",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102762.6116116,
+      "updated_at": 1794102762.611612,
+      "target_map_xyz": [
+        5.302203252532994,
+        -2.755142433663409,
+        0.9338461252980342
+      ],
+      "target_scene_xyz": [
+        3.7078344423307654,
+        0.44696075153983617,
+        -1.9266730305338524
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          5.632706642150879,
+          -2.5457658767700195,
+          0.6575005054473877
+        ],
+        "extent": [
+          0.7722468376159668,
+          0.6795568466186523,
+          0.7630957961082458
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          5.2465832233428955,
+          -2.8855443000793457,
+          0.27595260739326477
+        ],
+        [
+          5.2465832233428955,
+          -2.8855443000793457,
+          1.0390484035015106
+        ],
+        [
+          5.2465832233428955,
+          -2.2059874534606934,
+          0.27595260739326477
+        ],
+        [
+          5.2465832233428955,
+          -2.2059874534606934,
+          1.0390484035015106
+        ],
+        [
+          6.018830060958862,
+          -2.8855443000793457,
+          0.27595260739326477
+        ],
+        [
+          6.018830060958862,
+          -2.8855443000793457,
+          1.0390484035015106
+        ],
+        [
+          6.018830060958862,
+          -2.2059874534606934,
+          0.27595260739326477
+        ],
+        [
+          6.018830060958862,
+          -2.2059874534606934,
+          1.0390484035015106
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          3.668939317023004,
+          0.9070261486760386,
+          -2.0178631469086334
+        ],
+        [
+          3.668939317023004,
+          0.37339272482411845,
+          -2.0178631469086334
+        ],
+        [
+          3.668939317023004,
+          0.9070261486760386,
+          -1.5426485688536318
+        ],
+        [
+          3.668939317023004,
+          0.37339272482411845,
+          -1.5426485688536318
+        ],
+        [
+          4.208972070600603,
+          0.9070261486760386,
+          -2.0178631469086334
+        ],
+        [
+          4.208972070600603,
+          0.37339272482411845,
+          -2.0178631469086334
+        ],
+        [
+          4.208972070600603,
+          0.9070261486760386,
+          -1.5426485688536318
+        ],
+        [
+          4.208972070600603,
+          0.37339272482411845,
+          -1.5426485688536318
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          5.632706642150879,
+          -2.5457658767700195,
+          0.6575005054473877
+        ],
+        "extent": [
+          0.7722468376159668,
+          0.6795568466186523,
+          0.7630957961082458
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0013/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0013/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0013/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1851,
+      "observations": [
+        {
+          "id": "view_20261108_035242_654eee51",
+          "path": "objects/manual_0013/observations/view_20261108_035242_654eee51/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0013/observations/view_20261108_035242_654eee51/object_crop.png",
+      "reference_overlay": "objects/manual_0013/observations/view_20261108_035242_654eee51/overlay.png",
+      "reference_camera": "objects/manual_0013/observations/view_20261108_035242_654eee51/camera.json",
+      "reference_camera_pose": {
+        "x": 4.201460713355485,
+        "y": -3.3355211427331835,
+        "yaw_rad": 0.20263743225556397,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0014",
+      "label": "P-003",
+      "category": "Process Pump",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102814.3267515,
+      "updated_at": 1794102814.326752,
+      "target_map_xyz": [
+        5.372851164479665,
+        -2.9103695075164917,
+        1.645085463275375
+      ],
+      "target_scene_xyz": [
+        3.7572385765592067,
+        -0.05040941487788471,
+        -2.0352234318297144
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          5.845391273498535,
+          -2.709825277328491,
+          1.5842576026916504
+        ],
+        "extent": [
+          1.058678150177002,
+          0.6640715599060059,
+          0.4344984292984009
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          5.316052198410034,
+          -3.041861057281494,
+          1.36700838804245
+        ],
+        [
+          5.316052198410034,
+          -3.041861057281494,
+          1.8015068173408508
+        ],
+        [
+          5.316052198410034,
+          -2.3777894973754883,
+          1.36700838804245
+        ],
+        [
+          5.316052198410034,
+          -2.3777894973754883,
+          1.8015068173408508
+        ],
+        [
+          6.374730348587036,
+          -3.041861057281494,
+          1.36700838804245
+        ],
+        [
+          6.374730348587036,
+          -3.041861057281494,
+          1.8015068173408508
+        ],
+        [
+          6.374730348587036,
+          -2.3777894973754883,
+          1.36700838804245
+        ],
+        [
+          6.374730348587036,
+          -2.3777894973754883,
+          1.8015068173408508
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          3.717519019867157,
+          0.144050078291993,
+          -2.1271755645325134
+        ],
+        [
+          3.717519019867157,
+          -0.15979497716143418,
+          -2.1271755645325134
+        ],
+        [
+          3.717519019867157,
+          0.144050078291993,
+          -1.6627898583045373
+        ],
+        [
+          3.717519019867157,
+          -0.15979497716143418,
+          -1.6627898583045373
+        ],
+        [
+          4.457853390620305,
+          0.144050078291993,
+          -2.1271755645325134
+        ],
+        [
+          4.457853390620305,
+          -0.15979497716143418,
+          -2.1271755645325134
+        ],
+        [
+          4.457853390620305,
+          0.144050078291993,
+          -1.6627898583045373
+        ],
+        [
+          4.457853390620305,
+          -0.15979497716143418,
+          -1.6627898583045373
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          5.845391273498535,
+          -2.709825277328491,
+          1.5842576026916504
+        ],
+        "extent": [
+          1.058678150177002,
+          0.6640715599060059,
+          0.4344984292984009
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0014/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0014/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0014/revisions/rev0001/cloud_scene.ply",
+      "point_count": 2139,
+      "observations": [
+        {
+          "id": "view_20261108_035333_31db39b7",
+          "path": "objects/manual_0014/observations/view_20261108_035333_31db39b7/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0014/observations/view_20261108_035333_31db39b7/object_crop.png",
+      "reference_overlay": "objects/manual_0014/observations/view_20261108_035333_31db39b7/overlay.png",
+      "reference_camera": "objects/manual_0014/observations/view_20261108_035333_31db39b7/camera.json",
+      "reference_camera_pose": {
+        "x": 4.201460713355485,
+        "y": -3.3355211427331835,
+        "yaw_rad": 0.20263743225556397,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0015",
+      "label": "VS-001",
+      "category": "Vibration Sensor",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102909.6700954,
+      "updated_at": 1794102909.670096,
+      "target_map_xyz": [
+        3.339390670145975,
+        2.063093322474853,
+        1.4926094116977908
+      ],
+      "target_scene_xyz": [
+        2.3352382308713113,
+        0.056217194616929464,
+        1.442722603129268
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          2.9536027908325195,
+          2.9457478523254395,
+          1.4437899589538574
+        ],
+        "extent": [
+          0.8988556861877441,
+          1.8602344989776611,
+          0.36864495277404785
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          2.5041749477386475,
+          2.015630602836609,
+          1.2594674825668335
+        ],
+        [
+          2.5041749477386475,
+          2.015630602836609,
+          1.6281124353408813
+        ],
+        [
+          2.5041749477386475,
+          3.87586510181427,
+          1.2594674825668335
+        ],
+        [
+          2.5041749477386475,
+          3.87586510181427,
+          1.6281124353408813
+        ],
+        [
+          3.4030306339263916,
+          2.015630602836609,
+          1.2594674825668335
+        ],
+        [
+          3.4030306339263916,
+          2.015630602836609,
+          1.6281124353408813
+        ],
+        [
+          3.4030306339263916,
+          3.87586510181427,
+          1.2594674825668335
+        ],
+        [
+          3.4030306339263916,
+          3.87586510181427,
+          1.6281124353408813
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          1.7511712921249283,
+          0.219253508694522,
+          1.4095318900955307
+        ],
+        [
+          1.7511712921249283,
+          -0.03854016457404293,
+          1.4095318900955307
+        ],
+        [
+          1.7511712921249283,
+          0.219253508694522,
+          2.710395176093895
+        ],
+        [
+          1.7511712921249283,
+          -0.03854016457404293,
+          2.710395176093895
+        ],
+        [
+          2.3797417020464278,
+          0.219253508694522,
+          1.4095318900955307
+        ],
+        [
+          2.3797417020464278,
+          -0.03854016457404293,
+          1.4095318900955307
+        ],
+        [
+          2.3797417020464278,
+          0.219253508694522,
+          2.710395176093895
+        ],
+        [
+          2.3797417020464278,
+          -0.03854016457404293,
+          2.710395176093895
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          2.9536027908325195,
+          2.9457478523254395,
+          1.4437899589538574
+        ],
+        "extent": [
+          0.8988556861877441,
+          1.8602344989776611,
+          0.36864495277404785
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0015/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0015/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0015/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1351,
+      "observations": [
+        {
+          "id": "view_20261108_035509_cff8769d",
+          "path": "objects/manual_0015/observations/view_20261108_035509_cff8769d/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0015/observations/view_20261108_035509_cff8769d/object_crop.png",
+      "reference_overlay": "objects/manual_0015/observations/view_20261108_035509_cff8769d/overlay.png",
+      "reference_camera": "objects/manual_0015/observations/view_20261108_035509_cff8769d/camera.json",
+      "reference_camera_pose": {
+        "x": 3.7670686083042986,
+        "y": 0.9482284249501965,
+        "yaw_rad": 1.864678774031395,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0016",
+      "label": "VS-002",
+      "category": "Vibration Sensor",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794102953.0970469,
+      "updated_at": 1794102953.0970473,
+      "target_map_xyz": [
+        3.0703561702459568,
+        2.032518232723212,
+        1.398023429179547
+      ],
+      "target_scene_xyz": [
+        2.1471022169552145,
+        0.12236123833598107,
+        1.4213414214847635
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          2.9811878204345703,
+          2.2230429649353027,
+          1.3035023212432861
+        ],
+        "extent": [
+          0.2964351177215576,
+          0.43962645530700684,
+          0.47433650493621826
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          2.8329702615737915,
+          2.0032297372817993,
+          1.066334068775177
+        ],
+        [
+          2.8329702615737915,
+          2.0032297372817993,
+          1.5406705737113953
+        ],
+        [
+          2.8329702615737915,
+          2.442856192588806,
+          1.066334068775177
+        ],
+        [
+          2.8329702615737915,
+          2.442856192588806,
+          1.5406705737113953
+        ],
+        [
+          3.129405379295349,
+          2.0032297372817993,
+          1.066334068775177
+        ],
+        [
+          3.129405379295349,
+          2.0032297372817993,
+          1.5406705737113953
+        ],
+        [
+          3.129405379295349,
+          2.442856192588806,
+          1.066334068775177
+        ],
+        [
+          3.129405379295349,
+          2.442856192588806,
+          1.5406705737113953
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          1.9810980850166375,
+          0.3543118400173587,
+          1.4008599561411184
+        ],
+        [
+          1.9810980850166375,
+          0.022607990411611673,
+          1.4008599561411184
+        ],
+        [
+          1.9810980850166375,
+          0.3543118400173587,
+          1.708291043768396
+        ],
+        [
+          1.9810980850166375,
+          0.022607990411611673,
+          1.708291043768396
+        ],
+        [
+          2.188395370136608,
+          0.3543118400173587,
+          1.4008599561411184
+        ],
+        [
+          2.188395370136608,
+          0.022607990411611673,
+          1.4008599561411184
+        ],
+        [
+          2.188395370136608,
+          0.3543118400173587,
+          1.708291043768396
+        ],
+        [
+          2.188395370136608,
+          0.022607990411611673,
+          1.708291043768396
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          2.9811878204345703,
+          2.2230429649353027,
+          1.3035023212432861
+        ],
+        "extent": [
+          0.2964351177215576,
+          0.43962645530700684,
+          0.47433650493621826
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0016/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0016/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0016/revisions/rev0001/cloud_scene.ply",
+      "point_count": 1194,
+      "observations": [
+        {
+          "id": "view_20261108_035552_8b3c9dd5",
+          "path": "objects/manual_0016/observations/view_20261108_035552_8b3c9dd5/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0016/observations/view_20261108_035552_8b3c9dd5/object_crop.png",
+      "reference_overlay": "objects/manual_0016/observations/view_20261108_035552_8b3c9dd5/overlay.png",
+      "reference_camera": "objects/manual_0016/observations/view_20261108_035552_8b3c9dd5/camera.json",
+      "reference_camera_pose": {
+        "x": 3.5016866132542743,
+        "y": 1.1673336921391073,
+        "yaw_rad": 2.3427652392718574,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    },
+    {
+      "object_id": "manual_0017",
+      "label": "VS-003",
+      "category": "Vibration Sensor",
+      "note": "",
+      "active": true,
+      "revision": 1,
+      "created_at": 1794103046.9546309,
+      "updated_at": 1794103096.4060273,
+      "target_map_xyz": [
+        -0.37977464492962665,
+        2.0192835665334345,
+        1.6202019181347327
+      ],
+      "target_scene_xyz": [
+        -0.2655766747759627,
+        -0.033008334359952964,
+        1.412086410163241
+      ],
+      "aim_source": "observed_sample_near_surface_median",
+      "bbox_map": {
+        "center": [
+          -0.4122883677482605,
+          2.0196757316589355,
+          1.6162843704223633
+        ],
+        "extent": [
+          0.1274283230304718,
+          0.0691908597946167,
+          0.17574501037597656
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "bbox_corners_map": [
+        [
+          -0.4760025292634964,
+          1.9850803017616272,
+          1.528411865234375
+        ],
+        [
+          -0.4760025292634964,
+          1.9850803017616272,
+          1.7041568756103516
+        ],
+        [
+          -0.4760025292634964,
+          2.054271161556244,
+          1.528411865234375
+        ],
+        [
+          -0.4760025292634964,
+          2.054271161556244,
+          1.7041568756103516
+        ],
+        [
+          -0.3485742062330246,
+          1.9850803017616272,
+          1.528411865234375
+        ],
+        [
+          -0.3485742062330246,
+          1.9850803017616272,
+          1.7041568756103516
+        ],
+        [
+          -0.3485742062330246,
+          2.054271161556244,
+          1.528411865234375
+        ],
+        [
+          -0.3485742062330246,
+          2.054271161556244,
+          1.7041568756103516
+        ]
+      ],
+      "bbox_corners_scene": [
+        [
+          -0.33286890158286464,
+          0.031180513822115355,
+          1.3881680431899492
+        ],
+        [
+          -0.33286890158286464,
+          -0.09171809483241372,
+          1.3881680431899492
+        ],
+        [
+          -0.33286890158286464,
+          0.031180513822115355,
+          1.4365532598295412
+        ],
+        [
+          -0.33286890158286464,
+          -0.09171809483241372,
+          1.4365532598295412
+        ],
+        [
+          -0.24375818617694028,
+          0.031180513822115355,
+          1.3881680431899492
+        ],
+        [
+          -0.24375818617694028,
+          -0.09171809483241372,
+          1.3881680431899492
+        ],
+        [
+          -0.24375818617694028,
+          0.031180513822115355,
+          1.4365532598295412
+        ],
+        [
+          -0.24375818617694028,
+          -0.09171809483241372,
+          1.4365532598295412
+        ]
+      ],
+      "observed_surface_bbox_map": {
+        "center": [
+          -0.4122883677482605,
+          2.0196757316589355,
+          1.6162843704223633
+        ],
+        "extent": [
+          0.1274283230304718,
+          0.0691908597946167,
+          0.17574501037597656
+        ],
+        "yaw_deg": 0.0,
+        "kind": "axis_aligned_visible_surface_box",
+        "source": "observed_surface_samples"
+      },
+      "box_policy": "bounds_of_accumulated_observed_surfaces",
+      "cloud_path": "objects/manual_0017/revisions/rev0001/cloud_map.ply",
+      "cloud_npz": "objects/manual_0017/revisions/rev0001/cloud_map.npz",
+      "cloud_scene_path": "objects/manual_0017/revisions/rev0001/cloud_scene.ply",
+      "point_count": 397,
+      "observations": [
+        {
+          "id": "view_20261108_035726_85c6970a",
+          "path": "objects/manual_0017/observations/view_20261108_035726_85c6970a/observation.json"
+        }
+      ],
+      "reference_crop": "objects/manual_0017/observations/view_20261108_035726_85c6970a/object_crop.png",
+      "reference_overlay": "objects/manual_0017/observations/view_20261108_035726_85c6970a/overlay.png",
+      "reference_camera": "objects/manual_0017/observations/view_20261108_035726_85c6970a/camera.json",
+      "reference_camera_pose": {
+        "x": 0.4747071754778431,
+        "y": 1.3569918484453443,
+        "yaw_rad": 3.0054402994969838,
+        "camera_height_m": 1.7,
+        "pitch_deg": -8.9590278750984
+      },
+      "verified_navigation_goal": null,
+      "semantic_source": "manual_user_label",
+      "coordinate_frame": "map",
+      "geometry_note": "Partial rendered-depth surface samples. Bbox edits are recorded human estimates; neither is verified physical extent."
+    }
+  ],
+  "notes": [
+    "Human-drawn 2D outlines with expected Gaussian depth; partial surfaces, not complete true object volumes.",
+    "Labels are manually supplied. No Excel assets or automatic synthetic bindings.",
+    "Object aim point is not a navigation stopping point. Reference camera poses are not guaranteed reachable."
+  ],
+  "publication_note": "Inspection copy only: absolute project paths redacted. Use original runtime annotations and objects/ evidence for the demo."
+}

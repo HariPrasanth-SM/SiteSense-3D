@@ -1,0 +1,40 @@
+test_bad_pin_skipped_not_moved_across_wall (test_core.CoreTests.test_bad_pin_skipped_not_moved_across_wall) ... ok
+test_capacity_report (test_core.CoreTests.test_capacity_report) ... ok
+test_counts_100_200_and_unique (test_core.CoreTests.test_counts_100_200_and_unique) ... ok
+test_dark_blocked_gray_allowed (test_core.CoreTests.test_dark_blocked_gray_allowed) ... ok
+test_exclusion (test_core.CoreTests.test_exclusion) ... ok
+test_explicit_budget_error (test_core.CoreTests.test_explicit_budget_error) ... ok
+test_gray_corridor_priority (test_core.CoreTests.test_gray_corridor_priority) ... ok
+test_height_transform (test_core.CoreTests.test_height_transform) ... ok
+test_invalid_settings (test_core.CoreTests.test_invalid_settings) ... ok
+test_map_flip (test_core.CoreTests.test_map_flip) ... ok
+test_move_away_from_wall (test_core.CoreTests.test_move_away_from_wall) ... ok
+test_no_corner_cut (test_core.CoreTests.test_no_corner_cut) ... ok
+test_not_across_wall (test_core.CoreTests.test_not_across_wall) ... ok
+test_polygon_excludes_exterior (test_core.CoreTests.test_polygon_excludes_exterior) ... ok
+test_reproducible_seed (test_core.CoreTests.test_reproducible_seed) ... ok
+test_rotation_roundtrip (test_core.CoreTests.test_rotation_roundtrip) ... ok
+test_saved_selection_compatibility (test_core.CoreTests.test_saved_selection_compatibility) ... ok
+test_small_corridor_kept (test_core.CoreTests.test_small_corridor_kept) ... ok
+test_source_map_unchanged (test_core.CoreTests.test_source_map_unchanged) ... ok
+test_valid_clearance_stays (test_core.CoreTests.test_valid_clearance_stays) ... ok
+test_wrong_map_identity_rejected (test_core.CoreTests.test_wrong_map_identity_rejected) ... ok
+test_zero_shift (test_core.CoreTests.test_zero_shift) ... ok
+test_blank_requires_outline (test_editor.EditorTests.test_blank_requires_outline) ... ok
+test_corridor_priority (test_editor.EditorTests.test_corridor_priority) ... ok
+test_finish_outline (test_editor.EditorTests.test_finish_outline) ... ok
+test_pin_gray_serialization (test_editor.EditorTests.test_pin_gray_serialization) ... ok
+test_region_loaded_and_saves (test_editor.EditorTests.test_region_loaded_and_saves) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 1.142s
+
+OK
+Saved 100/100 camera positions to /tmp/tmpdddqd0kl/out
+Gray: 15; corridor: 0; locally shifted: 46
+Below preferred clearance (retained, not dropped): 30
+Virtual-camera selection only. Inspect camera_positions.png. No render or navigation map edits.
+Saved 100/100 camera positions to /tmp/tmpo1i5zq2v/out
+Gray: 16; corridor: 0; locally shifted: 45
+Below preferred clearance (retained, not dropped): 28
+Virtual-camera selection only. Inspect camera_positions.png. No render or navigation map edits.
