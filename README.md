@@ -92,4 +92,4 @@ This is a hackathon prototype, not a safety-certified navigation system. Routes 
 
 Built with **gsplat, FastSAM, DINOv3, NumPy/SciPy, and a local Python/browser interface**. Models and supplied scene data retain their original terms. [Sources and acknowledgements](docs/ACKNOWLEDGEMENTS.md).
 
-[object-assets]: GOOGLE_DRIVE_OBJECT_ASSETS_URL
+[object-assets]: https://drive.google.com/file/d/1KDeAAq0uEQuKEYVmxWivJ0JdRggtreVA/view?usp=sharing
