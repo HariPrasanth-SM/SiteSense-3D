@@ -5,7 +5,7 @@ Since AI Hackathon 2026
 
 ## Demo
 
-![SiteSence 3D demo](docs/media/demo_recording.gif)
+<img src="docs/media/demo_recording.webm" alt="SiteSence 3D demo" width="800">
 
 *A first-person trip to a selected asset, a random point, and a target object; with the route, RGB/depth feed, and service information on one screen.*
 
